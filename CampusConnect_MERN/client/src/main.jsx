@@ -2,7 +2,7 @@ import React,{useEffect,useMemo,useState} from 'react';
 import{createRoot}from'react-dom/client';
 import{Search,CalendarDays,MapPin,Clock,Bookmark,ArrowUpRight,Plus,Users,Ticket,Compass,Sparkles,X,CheckCircle2,GraduationCap,SlidersHorizontal}from'lucide-react';
 import'./style.css';
-const API='http://localhost:5000/api';
+const API='https://campusconnect-mern-1.onrender.com/api';
 const categories=['All','Technology','Cultural','Workshop','Sports','Community'];
 function App(){
  const[events,setEvents]=useState([]),[search,setSearch]=useState(''),[category,setCategory]=useState('All'),[saved,setSaved]=useState([]),[registered,setRegistered]=useState([]),[showForm,setShowForm]=useState(false),[notice,setNotice]=useState(''),[mode,setMode]=useState('demo'),[form,setForm]=useState({title:'',category:'Technology',date:'',time:'10:00 AM',venue:'',description:'',organizer:''});
